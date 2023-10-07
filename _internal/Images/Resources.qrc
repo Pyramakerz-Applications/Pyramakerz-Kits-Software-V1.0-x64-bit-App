@@ -1,0 +1,24 @@
+<RCC>
+  <qresource prefix="Images">
+    <file>Otto Ninja.png</file>
+    <file>Otto_Bot.png</file>
+    <file>green.png</file>
+    <file>red.png</file>
+    <file>Stem Vertical.png</file>
+    <file>test.png</file>
+    <file>toy-car.png</file>
+    <file>chip.png</file>
+    <file>update.png</file>
+    <file>fish.png</file>
+    <file>solar-cell.png</file>
+    <file>robot-arm.png</file>
+    <file>earthquake.png</file>
+    <file>piano.png</file>
+    <file>beach.png</file>
+    <file>waterfall.png</file>
+    <file>atm.png</file>
+    <file>bear.png</file>
+    <file>OrangeLogo.png</file>
+    <file>Orange.ico</file>
+  </qresource>
+</RCC>

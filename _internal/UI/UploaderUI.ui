@@ -1,0 +1,1342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Pyramakerz</class>
+ <widget class="QWidget" name="Pyramakerz">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>705</width>
+    <height>709</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>705</width>
+    <height>709</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>705</width>
+    <height>709</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Manrope Medium</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Pyramakerz Kits Software</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../Images/Orange.ico</normaloff>../Images/Orange.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#Pyramakerz{
+background-color:rgb(30, 30, 30);
+}</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>120</y>
+     <width>501</width>
+     <height>461</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame#frame{
+background-color:rgba(55, 55, 55, 55);
+border-radius: 20px;
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QPushButton" name="blink">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>380</y>
+      <width>151</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Manrope Light</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton:hover#blink {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 144, 0, 255), stop:1 rgba(255, 255, 255, 255));     
+    border-radius: 10px;
+}
+QPushButton#blink {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0	    rgba(80, 80, 80, 255), stop:1 rgba(255, 255, 255, 255));
+border-radius: 10px;
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0.966, y1:1, x2:0.278409, y2:0.881, stop:0 rgba(255, 170, 0, 255), stop:1 rgba(255, 255, 255, 255));
+    color: rgb(136, 136, 136); /* Change the text color to white when pressed */
+    border: 2px solid #CCCCCC; /* Add a black border when pressed */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Board Test
+   (Blink)</string>
+    </property>
+    <property name="icon">
+     <iconset resource="../Images/Resources.qrc">
+      <normaloff>:/Images/test.png</normaloff>:/Images/test.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>45</width>
+      <height>45</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QFrame" name="Grades_Frame">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>481</width>
+      <height>361</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame#Grades_Frame{
+background-color:qlineargradient(spread:pad, x1:0, y1:0.5625, x2:1, y2:1, stop:0 rgba(255, 150, 0, 240), stop:0.716418 rgba(70, 70, 70, 70));
+border-radius: 10px;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="aqua">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>230</y>
+       <width>221</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Manrope Light</family>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:hover#aqua {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 144, 0, 255), stop:1 rgba(255, 255, 255, 255));     
+    border-radius: 10px;
+}
+QPushButton#aqua {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0	    rgba(80, 80, 80, 255), stop:1 rgba(255, 255, 255, 255));
+border-radius: 10px;
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0.966, y1:1, x2:0.278409, y2:0.881, stop:0 rgba(255, 170, 0, 255), stop:1 rgba(255, 255, 255, 255));
+    color: rgb(136, 136, 136);   /* Change the text color to white when pressed */
+    border: 2px solid #CCCCCC; /* Add a black border when pressed */
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Aquaponic (G9)</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../Images/Resources.qrc">
+       <normaloff>:/Images/fish.png</normaloff>:/Images/fish.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="beach">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>230</y>
+       <width>231</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Manrope Light</family>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:hover#beach {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 144, 0, 255), stop:1 rgba(255, 255, 255, 255));     
+    border-radius: 10px;
+}
+QPushButton#beach {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0	    rgba(80, 80, 80, 255), stop:1 rgba(255, 255, 255, 255));
+border-radius: 10px;
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0.966, y1:1, x2:0.278409, y2:0.881, stop:0 rgba(255, 170, 0, 255), stop:1 rgba(255, 255, 255, 255));
+    color: rgb(136, 136, 136);   /* Change the text color to white when pressed */
+    border: 2px solid #CCCCCC; /* Add a black border when pressed */
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Beach Erosion (G4)</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../Images/Resources.qrc">
+       <normaloff>:/Images/beach.png</normaloff>:/Images/beach.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="robot">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>100</y>
+       <width>221</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Manrope Light</family>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:hover#robot {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 144, 0, 255), stop:1 rgba(255, 255, 255, 255));     
+    border-radius: 10px;
+}
+QPushButton#robot {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0	    rgba(80, 80, 80, 255), stop:1 rgba(255, 255, 255, 255));
+border-radius: 10px;
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0.966, y1:1, x2:0.278409, y2:0.881, stop:0 rgba(255, 170, 0, 255), stop:1 rgba(255, 255, 255, 255));
+    color: rgb(136, 136, 136);   /* Change the text color to white when pressed */
+    border: 2px solid #CCCCCC; /* Add a black border when pressed */
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Robotic Arm (G7)</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../Images/Resources.qrc">
+       <normaloff>:/Images/robot-arm.png</normaloff>:/Images/robot-arm.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="atm">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>231</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Manrope Light</family>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:hover#atm{
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 144, 0, 255), stop:1 rgba(255, 255, 255, 255));     
+    border-radius: 10px;
+}
+QPushButton#atm {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0	    rgba(80, 80, 80, 255), stop:1 rgba(255, 255, 255, 255));
+border-radius: 10px;
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0.966, y1:1, x2:0.278409, y2:0.881, stop:0 rgba(255, 170, 0, 255), stop:1 rgba(255, 255, 255, 255));
+color: rgb(136, 136, 136);  /* Change the text color to white when pressed */
+border: 2px solid #CCCCCC; /* Add a black border when pressed */
+}
+</string>
+     </property>
+     <property name="text">
+      <string>ATM                     (G2)</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../Images/Resources.qrc">
+       <normaloff>:/Images/atm.png</normaloff>:/Images/atm.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>45</width>
+       <height>45</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="animal">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>231</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Manrope Light</family>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="mouseTracking">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#animal {
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0	    rgba(80, 80, 80, 255), stop:1 rgba(255, 255, 255, 255));
+border-radius: 10px;
+}
+
+QPushButton:hover#animal {
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 144, 0, 255), stop:1 rgba(255, 255, 255, 255));     
+border-radius: 10px;
+}
+
+QPushButton:pressed {
+background-color: qlineargradient(spread:pad, x1:0.966, y1:1, x2:0.278409, y2:0.881, stop:0 rgba(255, 170, 0, 255), stop:1 rgba(255, 255, 255, 255));
+color: rgb(136, 136, 136);
+border: 2px solid #CCCCCC; /* Add a black border when pressed */
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Animals
+and their       (G1)
+Habitats </string>
+     </property>
+     <property name="icon">
+      <iconset resource="../Images/Resources.qrc">
+       <normaloff>:/Images/bear.png</normaloff>:/Images/bear.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>65</width>
+       <height>65</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="nile">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>170</y>
+       <width>231</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Manrope Light</family>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:hover#nile {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 144, 0, 255), stop:1 rgba(255, 255, 255, 255));     
+    border-radius: 10px;
+}
+QPushButton#nile {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0	    rgba(80, 80, 80, 255), stop:1 rgba(255, 255, 255, 255));
+border-radius: 10px;
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0.966, y1:1, x2:0.278409, y2:0.881, stop:0 rgba(255, 170, 0, 255), stop:1 rgba(255, 255, 255, 255));
+color: rgb(136, 136, 136);   /* Change the text color to white when pressed */
+border: 2px solid #CCCCCC; /* Add a black border when pressed */
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Nile Simulator   (G3)</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../Images/Resources.qrc">
+       <normaloff>:/Images/waterfall.png</normaloff>:/Images/waterfall.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>35</width>
+       <height>35</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="piano">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>290</y>
+       <width>231</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Manrope Light</family>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:hover#piano {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 144, 0, 255), stop:1 rgba(255, 255, 255, 255));     
+    border-radius: 10px;
+}
+QPushButton#piano {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0	    rgba(80, 80, 80, 255), stop:1 rgba(255, 255, 255, 255));
+border-radius: 10px;
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0.966, y1:1, x2:0.278409, y2:0.881, stop:0 rgba(255, 170, 0, 255), stop:1 rgba(255, 255, 255, 255));
+    color: rgb(136, 136, 136);   /* Change the text color to white when pressed */
+    border: 2px solid #CCCCCC; /* Add a black border when pressed */
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Smart Piano      (G5)</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../Images/Resources.qrc">
+       <normaloff>:/Images/piano.png</normaloff>:/Images/piano.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="solar">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>170</y>
+       <width>221</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Manrope Light</family>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:hover#solar {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 144, 0, 255), stop:1 rgba(255, 255, 255, 255));     
+    border-radius: 10px;
+}
+QPushButton#solar {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0	    rgba(80, 80, 80, 255), stop:1 rgba(255, 255, 255, 255));
+border-radius: 10px;
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0.966, y1:1, x2:0.278409, y2:0.881, stop:0 rgba(255, 170, 0, 255), stop:1 rgba(255, 255, 255, 255));
+    color: rgb(136, 136, 136);   /* Change the text color to white when pressed */
+    border: 2px solid #CCCCCC; /* Add a black border when pressed */
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Solar Tracker (G8)</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../Images/Resources.qrc">
+       <normaloff>:/Images/solar-cell.png</normaloff>:/Images/solar-cell.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>45</width>
+       <height>45</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="earth">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>10</y>
+       <width>221</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Manrope Light</family>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:hover#earth {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 144, 0, 255), stop:1 rgba(255, 255, 255, 255));     
+    border-radius: 10px;
+}
+QPushButton#earth {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0	    rgba(80, 80, 80, 255), stop:1 rgba(255, 255, 255, 255));
+border-radius: 10px;
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0.966, y1:1, x2:0.278409, y2:0.881, stop:0 rgba(255, 170, 0, 255), stop:1 rgba(255, 255, 255, 255));
+    color: rgb(136, 136, 136);   /* Change the text color to white when pressed */
+    border: 2px solid #CCCCCC; /* Add a black border when pressed */
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Earthquake (G6)</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../Images/Resources.qrc">
+       <normaloff>:/Images/earthquake.png</normaloff>:/Images/earthquake.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>65</width>
+       <height>65</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="rc">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>290</y>
+       <width>221</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Manrope Light</family>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:hover#rc {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 144, 0, 255), stop:1 rgba(255, 255, 255, 255));     
+    border-radius: 10px;
+}
+QPushButton#rc {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0	    rgba(80, 80, 80, 255), stop:1 rgba(255, 255, 255, 255));
+border-radius: 10px;
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0.966, y1:1, x2:0.278409, y2:0.881, stop:0 rgba(255, 170, 0, 255), stop:1 rgba(255, 255, 255, 255));
+    color: rgb(136, 136, 136); /* Change the text color to white when pressed */
+    border: 2px solid #CCCCCC; /* Add a black border when pressed */
+}
+</string>
+     </property>
+     <property name="text">
+      <string>RC Car</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../Images/Resources.qrc">
+       <normaloff>:/Images/toy-car.png</normaloff>:/Images/toy-car.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="Generic_Frame">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>380</y>
+      <width>311</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame#Generic_Frame{
+background-color:qlineargradient(spread:pad, x1:0, y1:0.5625, x2:1, y2:1, stop:0 rgba(255, 150, 0, 240), stop:0.716418 rgba(70, 70, 70, 70));
+border-radius: 10px;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="ninja">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>141</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Manrope Light</family>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:hover#ninja {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 144, 0, 255), stop:1 rgba(255, 255, 255, 255));     
+    border-radius: 10px;
+}
+QPushButton#ninja {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0	    rgba(80, 80, 80, 255), stop:1 rgba(255, 255, 255, 255));
+border-radius: 10px;
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0.966, y1:1, x2:0.278409, y2:0.881, stop:0 rgba(255, 170, 0, 255), stop:1 rgba(255, 255, 255, 255));
+    color: rgb(136, 136, 136); /* Change the text color to white when pressed */
+    border: 2px solid #CCCCCC; /* Add a black border when pressed */
+}
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="../Images/Resources.qrc">
+       <normaloff>:/Images/Otto Ninja.png</normaloff>:/Images/Otto Ninja.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>130</width>
+       <height>130</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Otto_Bot">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>10</y>
+       <width>131</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Manrope Light</family>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:hover#Otto_Bot {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 144, 0, 255), stop:1 rgba(255, 255, 255, 255));     
+    border-radius: 10px;
+}
+QPushButton#Otto_Bot {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0	    rgba(80, 80, 80, 255), stop:1 rgba(255, 255, 255, 255));
+border-radius: 10px;
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0.966, y1:1, x2:0.278409, y2:0.881, stop:0 rgba(255, 170, 0, 255), stop:1 rgba(255, 255, 255, 255));
+    color: rgb(136, 136, 136); /* Change the text color to white when pressed */
+    border: 2px solid #CCCCCC; /* Add a black border when pressed */
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Otto Bot</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../Images/Resources.qrc">
+       <normaloff>:/Images/Otto_Bot.png</normaloff>:/Images/Otto_Bot.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>50</height>
+      </size>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="Boards_Frame">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>170</y>
+     <width>161</width>
+     <height>411</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame#Boards_Frame{
+background-color:rgba(55, 55, 55, 120);
+border-radius: 20px;
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QRadioButton" name="mango">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>80</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Manrope ExtraBold</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #FFFFFF;</string>
+    </property>
+    <property name="text">
+     <string>Mango UNO</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="uno">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>110</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Manrope ExtraBold</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #FFFFFF;</string>
+    </property>
+    <property name="text">
+     <string>UNO</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="nano">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>140</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Manrope ExtraBold</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #FFFFFF;</string>
+    </property>
+    <property name="text">
+     <string>NANO</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="erase">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>220</y>
+      <width>141</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Manrope ExtraBold</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton:hover#erase {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0	    rgba(80, 80, 80, 255), stop:1 rgba(255, 255, 255, 255));     
+    border-radius: 10px;
+}
+QPushButton#erase {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 144, 0, 255), stop:1 rgba(255, 255, 255, 255));
+border-radius: 10px;
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0.966, y1:1, x2:0.278409, y2:0.881, stop:0 rgba(255, 170, 0, 255), stop:1 rgba(255, 255, 255, 255));
+    color: #FFFFFF; /* Change the text color to white when pressed */
+    border: 2px solid #CCCCCC; /* Add a black border when pressed */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Clear Flash
+   Memory</string>
+    </property>
+    <property name="icon">
+     <iconset resource="../Images/Resources.qrc">
+      <normaloff>:/Images/chip.png</normaloff>:/Images/chip.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>45</width>
+      <height>45</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QFrame" name="Select_Board_Frame">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>10</y>
+      <width>141</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame#Select_Board_Frame{
+background-color: rgb(255, 135, 17);;
+border-radius: 20px;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="Select_Label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>121</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Manrope ExtraBold</family>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #FFFFFF;</string>
+     </property>
+     <property name="text">
+      <string>Select Board:</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QRadioButton" name="mega">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>170</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Manrope ExtraBold</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #FFFFFF;</string>
+    </property>
+    <property name="text">
+     <string>Mega 2560</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="refresh">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>310</y>
+      <width>141</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Comic Sans MS</family>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton:hover#refresh {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0	    rgba(80, 80, 80, 255), stop:1 rgba(255, 255, 255, 255));     
+    border-radius: 10px;
+}
+QPushButton#refresh {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 144, 0, 255), stop:1 rgba(255, 255, 255, 255));
+border-radius: 10px;
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0.966, y1:1, x2:0.278409, y2:0.881, stop:0 rgba(255, 170, 0, 255), stop:1 rgba(255, 255, 255, 255));
+    color: #FFFFFF; /* Change the text color to white when pressed */
+    border: 2px solid #CCCCCC; /* Add a black border when pressed */
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="../Images/Resources.qrc">
+      <normaloff>:/Images/update.png</normaloff>:/Images/update.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>70</width>
+      <height>70</height>
+     </size>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="Empower_Label">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>80</y>
+     <width>151</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Manrope ExtraBold</family>
+     <pointsize>16</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 135, 17);</string>
+   </property>
+   <property name="text">
+    <string>Empower</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Logo">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>401</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../Images/Resources.qrc">:/Images/OrangeLogo.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="We_Label">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>50</y>
+     <width>61</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Manrope ExtraBold</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 135, 17);</string>
+   </property>
+   <property name="text">
+    <string>We</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="STEM_Frame">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>590</y>
+     <width>91</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame#STEM_Frame{
+background-color:qlineargradient(spread:pad, x1:0.513, y1:1, x2:0.492, y2:0.131273, stop:0 rgba(255, 170, 0, 200), stop:1 rgba(30, 30, 30, 150));
+border-radius: 10px;
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="STEM_Label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>71</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../Images/Resources.qrc">:/Images/Stem Vertical.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="Innovation_Label">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>120</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Manrope ExtraBold</family>
+     <pointsize>17</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 135, 17);</string>
+   </property>
+   <property name="text">
+    <string>Innovation</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Department_Label">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>670</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Impact</family>
+     <pointsize>19</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 135, 17);</string>
+   </property>
+   <property name="text">
+    <string>Department</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="RD_Label">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>620</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Impact</family>
+     <pointsize>19</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel#RD_Label{
+color: rgb(255, 135, 17);}</string>
+   </property>
+   <property name="text">
+    <string> R&amp;D</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="Progress_Frame">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>590</y>
+     <width>391</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame#Progress_Frame{
+background-color:rgba(55, 55, 55, 120);
+border-radius: 20px;
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QProgressBar" name="progressBar">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>81</y>
+      <width>371</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="mouseTracking">
+     <bool>false</bool>
+    </property>
+    <property name="tabletTracking">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QProgressBar{
+background-color:rgba(240, 240, 240,150);
+border-radius: 7px;
+border: 1px solid qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.442786 rgba(255, 147, 21, 255), stop:1 rgba(200, 200, 200, 220));
+}
+
+QProgressBar::chunk {
+border-radius: 7px;
+background-color: qlineargradient(spread:pad x1:0, x2:1, y1:0.511364, y2:0.523, stop:0 #1C3334, stop:1 #376E6F);
+border: 1px solid qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.442786 rgba(255, 147, 21, 255), stop:1 rgba(200, 200, 200, 220));
+}</string>
+    </property>
+    <property name="value">
+     <number>24</number>
+    </property>
+    <property name="textVisible">
+     <bool>false</bool>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <property name="textDirection">
+     <enum>QProgressBar::TopToBottom</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="title">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>10</y>
+      <width>261</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Manrope ExtraBold</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 135, 17);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Connection_Label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Update_Label">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>40</y>
+      <width>261</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Manrope ExtraBold</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 135, 17);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="Animated_2">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>0</y>
+     <width>111</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Animated_1">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>590</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>frame</zorder>
+  <zorder>Boards_Frame</zorder>
+  <zorder>Logo</zorder>
+  <zorder>We_Label</zorder>
+  <zorder>STEM_Frame</zorder>
+  <zorder>Innovation_Label</zorder>
+  <zorder>Department_Label</zorder>
+  <zorder>RD_Label</zorder>
+  <zorder>Progress_Frame</zorder>
+  <zorder>Animated_2</zorder>
+  <zorder>Animated_1</zorder>
+  <zorder>Empower_Label</zorder>
+ </widget>
+ <resources>
+  <include location="../Images/Resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
